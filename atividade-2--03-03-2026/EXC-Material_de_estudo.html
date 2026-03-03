@@ -9,7 +9,7 @@
         <meta charset="UTF-8"> <!--Permite acentos e alguns caracteres especiais-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Compatibiliza o layout e tamanho com diferentes tipos de dispositivo -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibiliza com o navegador -->
-        <!--link rel="stylesheet" href="style.css" (quero criar outro arquivo contendo o CSS mas terei que deixá-lo para amanhã)-->
+        <link rel="stylesheet" href="style.css">
         <title>
             Material de estudo digital - Portas Logicas
         </title>
@@ -39,7 +39,7 @@
                 <li><a href="#or">OR</a></li>
                 <li><a href="#nand">NAND</a></li>
                 <li><a href="#nor">NOR</a></li>
-                <li><a href="xor">XOR</a></li>
+                <li><a href="#xor">XOR</a></li>
                 <li><a href="#xnor">XNOR</a></li>
                 <li><a href="#formulario">Formulario de satisfação</a></li>
             </ul>
@@ -56,7 +56,7 @@
                     Demonstração abaixo:
                 </p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\buffer.mp4" type="video/mp4">
+                    <source src="media/buffer.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade do Buffer</h3>
                 <table id="t-buffer">
@@ -101,7 +101,7 @@
                     Ela é uma <b>porta <u>simples</u></b>, portanto ela recebe apenas um sinal (e retorna também um sinal)
                 </p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\not-gate.mp4" type="video/mp4">
+                    <source src="media/not-gate.mp4" type="video/mp4">
                 </video>        
                 <h3>Tabela-Verdade</h3>    
                 <table>
@@ -132,7 +132,7 @@
                     Tradução do ingles "E", esta porta retorna 1 apenas quando TODAS as entradas são 1
                 </p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\and-gate.mp4" type="video/mp4">
+                    <source src="media/and-gate.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade</h3>
                 <table>
@@ -173,7 +173,7 @@
                 <h2>OR</h2>
                 <p>A porta OR (Tradução do inglês "ou") é uma porta composta que retorna 1 quando <i>pelo menos</i> uma de suas entradas for 1</p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\or-gate.mp4" type="video/mp4">
+                    <source src="media/or-gate.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade</h3>
                 <table>
@@ -217,7 +217,7 @@
                     Se a porta AND retorna 1 <b>apenas</b> quando todas as entradas forem 1, então a porta NAND retorna 0 <b>APENAS</b> quando <i>todas</i> as entradas forem 1.
                 </p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\nand-gate.mp4" type="video/mp4">
+                    <source src="media/nand-gate.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade</h3>
                 <table>
@@ -261,7 +261,7 @@
                     Ou seja, se a OR apenas retorna 0 quando <u>TODAS</u> as entradas forem 0, a NOR retorna 1 <b>APENAS QUANDO</b> <u>todas</u> as entradas forem 0.
                 </p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\nor-gate.mp4" type="video/mp4">
+                    <source src="media/nor-gate.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade</h3>
                 <table>
@@ -306,7 +306,7 @@
                     <sub>(Em outras palavras, XOR retorna 1 quando as entradas forem diferentes)</sub>
                 </p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\xor-gate.mp4" type="video/mp4">
+                    <source src="media/xor-gate.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade</h3>
                 <table>
@@ -350,7 +350,7 @@
                     Logo, como a XOR retorna 1 quando as entradas são diferentes, a XNOR retorna 1 quando as entradas são <u>iguais</u>.
                 </p>
                 <video width="200" autoplay loop muted>
-                    <source src="media\xnor-gate.mp4" type="video/mp4">
+                    <source src="media/xnor-gate.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade</h3>
                 <table>
@@ -386,11 +386,50 @@
                 </table>
                 <p>Expressão booleana da saída: ¬(A ⊕ B) = (¬A + B)(A + ¬B)</p>
             </section>
+            <hr>
+            <section id="formulario">
+                <h2>Avaliação do material</h2>
+                <p>Preencha o formulário abaixo para avaliar o material e a sua experiência durante o estudo.</p>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+                    <br><br>
+                    <label for="curso">Curso/Semestre:</label><br>
+                    <input id="curso" name="curso" type="text" placeholder="Ex: Engenharia de Software - 3º semestre" required>
+                    <br><br>                       
+                    <p>De 1 a 5, como você avalia a clareza do material?</p>
+                    <input id="c1" name="clareza" type="radio" value="1" required><label for="c1">1</label>
+                    <input id="c2" name="clareza" type="radio" value="2"><label for="c2">2</label>
+                    <input id="c3" name="clareza" type="radio" value="3"><label for="c3">3</label>
+                    <input id="c4" name="clareza" type="radio" value="4"><label for="c4">4</label>
+                    <input id="c5" name="clareza" type="radio" value="5"><label for="c5">5</label>                         
+                    <br><br>
+                    <label for="mais-dificil">Qual porta você achou mais difícil?</label><br>
+                    <select id="mais-dificil" name="mais_dificil" required>
+                        <option value="" selected disabled>Selecione uma opção</option>
+                        <option value="BUFFER">BUFFER</option>
+                        <option value="NOT">NOT</option>
+                        <option value="AND">AND</option>
+                        <option value="OR">OR</option>
+                        <option value="NAND">NAND</option>
+                        <option value="NOR">NOR</option>
+                        <option value="XOR">XOR</option>
+                        <option value="XNOR">XNOR</option>
+                    </select>
+                    <br><br>
+                    <input id="recomendaria" name="recomendaria" type="checkbox" value="sim">
+                    <label for="recomendaria">Eu recomendaria este material para outro aluno.</label>                   
+                    <br><br>                   
+                    <label for="comentarios">Comentários (opcional):</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="30" placeholder="Escreva seu feedback..."></textarea>                   
+                    <br><br>                  
+                    <button type="submit">Enviar avaliação</button>
+                </form>
+            </section>
         </main>
-        <hr>
         <footer>
-
+            <hr>
+            <p>Material desenvolvido por Bruno André Fernandes Ortega para a a matéria de Front End (HTML & CSS)</p>
         </footer>
     </body>
 </html>
-
