@@ -58,9 +58,325 @@
                     <source src="media\buffer.mp4" type="video/mp4">
                 </video>
                 <h3>Tabela-Verdade do Buffer</h3>
-                <table>
-
+                <table id="t-buffer">
+                    <thead>
+                        <tr>
+                            <th>
+                                A
+                            </th>
+                            <th>
+                                Saída
+                            </th>
+                        </tr>
+                    </thead>    
+                    <tbody>
+                        <tr>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
+                <p>
+                    Expressão Booleana da saída: A
+                </p>
+            </section>
+            <section id="not">
+                <h2>NOT (Inversor)</h2>
+                <p>
+                    A porta NOT, também conhecida como inversora, ela simplesmente inverte o sinal que recebe.<br>
+                    Ela é uma <b>porta <u>simples</u></b>, portanto ela recebe apenas um sinal (e retorna também um sinal)
+                </p>
+                <video width="200" autoplay loop muted>
+                    <source src="media\not-gate.mp4" type="video/mp4">
+                </video>        
+                <h3>Tabela-Verdade</h3>    
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>    
+                <p>Expressão booleana da saída: ¬A</p>
+            </section>
+            <section id="and">
+                <h2>AND</h2>
+                <p>
+                    A porta AND é uma porta composta, ou seja, ela precisa de mais de pelo menos duas entradas para determinar uma saida.<br>
+                    Tradução do ingles "E", esta porta retorna 1 apenas quando TODAS as entradas são 1
+                </p>
+                <video width="200" autoplay loop muted>
+                    <source src="media\and-gate.mp4" type="video/mp4">
+                </video>
+                <h3>Tabela-Verdade</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Expressão booleana da saída: AB</p>
+            </section>
+            <section id="or">
+                <h2>OR</h2>
+                <p>A porta OR (Tradução do inglês "ou") é uma porta composta que retorna 1 quando <i>pelo menos</i> uma de suas entradas for 1</p>
+                <video width="200" autoplay loop muted>
+                    <source src="media\or-gate.mp4" type="video/mp4">
+                </video>
+                <h3>Tabela-Verdade</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Expressão booleana da saída: A + B</p>
+            </section>
+            <section id="nand">
+                <h2>NAND</h2>
+                <p>
+                    A porta NAND é o equivalente a uma porta AND diretamente seguida de uma NOT (NAND = NOT + AND)<br>
+                    Se a porta AND retorna 1 <b>apenas</b> quando todas as entradas forem 1, então a porta NAND retorna 0 <b>APENAS</b> quando <i>todas</i> as entradas forem 1.
+                </p>
+                <video width="200" autoplay loop muted>
+                    <source src="media\nand-gate.mp4" type="video/mp4">
+                </video>
+                <h3>Tabela-Verdade</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Expressão booleana da saída: [¬(A · B)] = ¬A + ¬B (por meio das leis de De Morgan)</p>
+            </section>
+            <section id="nor">
+                <h2>NOR</h2>
+                <p>
+                    Assim como a NAND é o equivalente à NOT + AND, a NOR é o mesmo que uma porta OR seguida de uma NOT.<br>
+                    Ou seja, se a OR apenas retorna 0 quando <u>TODAS</u> as entradas forem 0, a NOR retorna 1 <b>APENAS QUANDO</b> <u>todas</u> as entradas forem 0.
+                </p>
+                <video width="200" autoplay loop muted>
+                    <source src="media\nor-gate.mp4" type="video/mp4">
+                </video>
+                <h3>Tabela-Verdade</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Expressão booleana da saída: ¬(A + B) = ¬A¬B (por meio das leis de De Morgan)</p>
+            </section>
+            <section id="xor">
+                <h2>XOR</h2>
+                <p>
+                    A porta XOR vem do inglês "Exclusive OR" (X-Clusive OR), que significa "OU Exclusivo"<br>
+                    Ou seja, a porta XOR retornará 1 <b>APENAS</b> quando <b><i>SOMENTE <u>UMA</u></i></b> das portas for 1.<br>
+                    <sub>(Em outras palavras, XOR retorna 1 quando as entradas forem diferentes)</sub>
+                </p>
+                <video width="200" autoplay loop muted>
+                    <source src="media\xor-gate.mp4" type="video/mp4">
+                </video>
+                <h3>Tabela-Verdade</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Expressão booleana da saída: A ⊕ B (que é o equivalente à ((¬AB)+(A¬B)))</p>
+            </section>
+            <section id="xnor">
+                <h2>XNOR</h2>
+                <p>
+                    Assim como a NAND e a NOR são, literalmente, a negação da AND e a NOR, a porta XNOR é a negação da porta XOR.<br>
+                    Logo, como a XOR retorna 1 quando as entradas são diferentes, a XNOR retorna 1 quando as entradas são <u>iguais</u>.
+                </p>
+                <video width="200" autoplay loop muted>
+                    <source src="media\xnor-gate.mp4" type="video/mp4">
+                </video>
+                <h3>Tabela-Verdade</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>Saída</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>1</th>
+                        </tr>
+                        <tr>
+                            <th>0</th>
+                            <th>1</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Expressão booleana da saída: ¬(A ⊕ B) = (¬A + B)(A + ¬B)</p>
             </section>
         </main>
         <footer>
