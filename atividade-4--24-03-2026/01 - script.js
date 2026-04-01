@@ -42,7 +42,6 @@ function controls(){
             lilGuy.src = mood.dead;
         }
     }, 1);
-    console.log(control);
 }
 
 function feed(){
