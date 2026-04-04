@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Development - Atividades</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .activity-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .activity-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .activity-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .activity-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .activity-link:hover {
+            background: white;
+            color: #667eea;
+            border-color: #667eea;
+        }
+
+        .date {
+            color: #acacac;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .activities {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Front-End Development</h1>
+            <p>Portfólio de Atividades - 2026</p>
+        </header>
+
+        <div class="activities">
+            <!-- Atividade 1 -->
+            <div class="activity-card">
+                <div class="date">📅 28 de fevereiro de 2026</div>
+                <h2>Atividade 1</h2>
+                <p>Acervo infinito: Cartas de colecionador</p>
+                <a href="atividade-1--28-02-2026/index.html" class="activity-link">Acessar →</a>
+            </div>
+
+            <!-- Atividade 2 -->
+            <div class="activity-card">
+                <div class="date">📅 03 de março de 2026</div>
+                <h2>Atividade 2</h2>
+                <p>Uma explicação breve sobre portas lógicas</p>
+                <a href="atividade-2--03-03-2026/EXC-Material_de_estudo.html" class="activity-link">Acessar →</a>
+            </div>
+
+            <!-- Atividade 3 -->
+            <div class="activity-card">
+                <div class="date">📅 08 de março de 2026</div>
+                <h2>Atividade 3</h2>
+                <p>Arquivo (Quase) Perdido da Ciência da Computação</p>
+                <a href="atividade-3--08-03-2026/atividade.html" class="activity-link">Acessar →</a>
+            </div>
+
+            <!-- Atividade 3b -->
+            <div class="activity-card">
+                <div class="date">📅 10 de março de 2026</div>
+                <h2>Atividade 3b</h2>
+                <p>Atividade 3 + DaisyUI + Tailwind</p>
+                <a href="atividade-3b--10-03-2026/atividade.html" class="activity-link">Acessar →</a>
+            </div>
+
+            <!-- Atividade 3c -->
+            <div class="activity-card">
+                <div class="date">📅 17 de março de 2026</div>
+                <h2>Atividade 3c</h2>
+                <p>Atividade 3 + Bootstrap</p>
+                <a href="atividade-3c--17-03-2026/atividade.html" class="activity-link">Acessar →</a>
+            </div>
+
+            <!-- Atividade 4 -->
+            <div class="activity-card">
+                <div class="date">📅 24 de março de 2026</div>
+                <h2>Atividade 4</h2>
+                <p>Intro à JS com o bixinho virtual (e o ferlini)</p>
+                <a href="atividade-4--24-03-2026/00-bixinho.html" class="activity-link">Acessar →</a>
+            </div>
+
+            <!-- Experiments -->
+            <div class="activity-card">
+                <div class="date">🧪 Expermientos</div>
+                <h2>Atividade em sala</h2>
+                <p>Sistema de supermercado</p>
+                <a href="experiments/aula2.html" class="activity-link">Acessar →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

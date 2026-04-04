@@ -1,7 +1,7 @@
 /*Codigo feito por Bruno Ortega - Aluno de ESOFT3S-M-A*/
-const lilGuy = document.getElementById("lilGuy");
-const food = document.getElementById("food");
-const easterEgg = document.getElementById("easterEgg");
+const lilGuy = document.querySelector("#bixinho img");
+const food = document.querySelector("#comida img");
+const easterEgg = document.querySelector("#ferlini img");
 
 const mood = {
     idle: "IdleLilGuy.png",
@@ -41,7 +41,7 @@ function controls(){
         if(control == 60){
             lilGuy.src = mood.dead;
         }
-    }, 1);
+    }, 1000); // Changed to 1000ms for seconds
 }
 
 function feed(){
@@ -68,3 +68,5 @@ function cycleEasterEgg(){
     easterEgg.src = easterEggImages[easterEggIndex];
     easterEggIndex = (easterEggIndex + 1) % easterEggImages.length;
 }
+
+controls();
