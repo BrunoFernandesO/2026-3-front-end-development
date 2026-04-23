@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Correção Prova - Bruno</title>
+		<style>
+			body{
+				background: #eef5ff;
+				font-family: Arial, Helvetica, sans-serif;
+				margin: 0;
+				padding: 20px;
+				color: #222;
+			}
+			.grupo{
+				background-color: #ccebff;
+				border: 2px solid #8dbcd9;
+				border-radius: 13px;
+				box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
+				transition: all 0.35s ease;
+				justify-content: space-between;
+				margin-top: 20px;
+				padding: 15px;
+			}
+			.grupo:hover{
+				transform: scale(1.01);
+			}
+			.titulo{
+				text-align: center;
+				color: #1b3a57;
+			}
+			.selecao{
+				text-align: center;
+			}
+			.lista{
+				list-style-type: square;
+			}
+			.lista li{
+				margin-bottom: 9px;
+			}
+			#grupo-1:hover{
+				background-color: #ffcd94;
+			}
+			#grupo-1:hover #lista-1{
+				color: #ff6600;
+			}
+			#grupo-2:hover{
+				background-color: #80ff8e;
+			}
+			#grupo-2:hover #lista-2{
+				color: #007a0e;
+			}
+			#grupo-3:hover{
+				background-color: #e0b4fe;
+			}
+			#grupo-3:hover #lista-3{
+				color: #50007a;
+			}
+			.funfact{
+				text-align: left;
+				padding: 10px;
+				cursor: pointer;
+			}
+			.funfact summary{
+				font-weight: bold;
+				color: #1b3a57;
+			}
+			.end{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 20px;
+			}
+			.button{
+				cursor: pointer;
+				padding: 10px 20px;
+				border: 1px solid #1b3a57;
+				border-radius: 8px;
+				background: #ffffff;
+				color: #1b3a57;
+			}
+			.button:hover{
+				background: #1b3a57;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="grupo" id="grupo-1">
+			<h1 class="titulo" id="titulo-1"><b><i>GRUPO A</i></b></h1>
+			<h3 class="selecao"><u>Seleções</u></h3>
+			<ul id="lista-1" class="lista">
+				<li class="pais" id="pais-1">Mexico</li>
+				<li class="pais" id="pais-2">Africa do sul</li>
+				<li class="pais" id="pais-3">Coreia do sul</li>
+				<li class="pais" id="pais-4">Republica Tcheca</li>
+			</ul>
+			<details class="funfact" id="funfact-1">
+				<summary>Saiba Mais</summary>
+				<b>Fatos: </b>O jogo de abertura será México x África do Sul. Confrontos entre Coreia do Sul e seleções europeias já ocorreram em várias Copas, com histórico equilibrado.
+			</details>
+		</div>
+		<br>
+		<div class="grupo" id="grupo-2">
+			<h1 class="titulo" id="titulo-2"><b><i>GRUPO B</i></b></h1>
+			<h3 class="selecao"><u>Seleções</u></h3>
+			<ul id="lista-2" class="lista">
+				<li class="pais" id="pais-5">Canada</li>
+				<li class="pais" id="pais-6">Suiça</li>
+				<li class="pais" id="pais-7">Catar</li>
+				<li class="pais" id="pais-8">Vaga Europeia (Bósnia)</li>
+			</ul>
+			<details class="funfact" id="funfact-2">
+				<summary>Saiba Mais</summary>
+				<b>Fatos: </b>O Canadá joga em casa, fator importante de desempenho. Catar e Suíça já se enfrentaram recentemente em amistosos internacionais.
+			</details>
+		</div>
+		<br>
+		<div class="grupo" id="grupo-3">
+			<h1 class="titulo" id="titulo-3"><b><i>GRUPO C</i></b></h1>
+			<h3 class="selecao"><u>Seleções</u></h3>
+			<ul id="lista-3" class="lista">
+				<li class="pais" id="pais-9">Brasil</li>
+				<li class="pais" id="pais-10">Marrocos</li>
+				<li class="pais" id="pais-11">Haiti</li>
+				<li class="pais" id="pais-12">Escócia</li>
+			</ul>
+			<details class="funfact" id="funfact-3">
+				<summary>Saiba Mais</summary>
+				<b>Fatos: </b>Brasil, Marrocos e Escócia já dividiram grupo em 1998. Brasil nunca perdeu para a Escócia em Copas.
+			</details>
+		</div>
+
+		<div class="end" id="end-1">
+			<button class="button" onclick="anterior()">Anterior</button>
+			<button class="button" onclick="proximo()">Proximo</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
